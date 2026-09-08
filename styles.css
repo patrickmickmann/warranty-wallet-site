@@ -1,0 +1,49 @@
+/* Local system fonts only. No imports, scripts, or remote assets. */
+:root { color-scheme: light dark; --bg:#f7f9f8; --surface:#fff; --text:#162a29; --muted:#516663; --line:#d8e2df; --accent:#096b5d; --tint:#e4f2ec; }
+* { box-sizing:border-box; }
+html { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--text); }
+a { color:var(--accent); text-underline-offset:.22em; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:3px; }
+.wrap { width:min(100% - 48px, 1040px); margin-inline:auto; }
+.site-header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-block:28px; border-bottom:1px solid var(--line); }
+.brand { display:flex; align-items:center; gap:10px; color:var(--text); font-size:17px; font-weight:650; text-decoration:none; letter-spacing:-.4px; }
+.mark { display:grid; place-items:center; width:30px; height:34px; border-radius:9px; background:var(--accent); color:var(--surface); font-size:21px; }
+nav { display:flex; gap:24px; flex-wrap:wrap; }
+nav a { display:inline-flex; align-items:center; min-height:44px; font-size:14px; color:var(--muted); text-decoration:none; }
+nav a:hover,nav a[aria-current] { color:var(--accent); text-decoration:underline; }
+.hero { padding:88px 0 64px; max-width:810px; }
+.eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; margin:0 0 20px; }
+h1,h2,h3 { line-height:1.13; letter-spacing:-.035em; text-wrap:balance; overflow-wrap:anywhere; hyphens:auto; }
+h1 { font-size:clamp(40px,6.5vw,72px); font-weight:650; margin:0 0 24px; }
+h1 span { color:var(--accent); }
+.lead { color:var(--muted); font-size:clamp(18px,2.4vw,22px); max-width:620px; line-height:1.55; }
+.store-placeholder { display:inline-block; margin-top:20px; padding:13px 21px; border:1px solid var(--line); border-radius:14px; background:var(--surface); font-size:15px; font-weight:600; }
+.small { font-size:14px; color:var(--muted); }
+.benefits { display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--line); gap:0 60px; }
+.benefit { padding:28px 0; border-bottom:1px solid var(--line); }
+.number { color:var(--accent); font-size:12px; font-variant-numeric:tabular-nums; }
+h2 { font-size:27px; margin:14px 0; }
+.benefit h2 { font-size:23px; }
+.benefit p { color:var(--muted); margin-bottom:0; max-width:420px; }
+.note { margin:44px 0 60px; padding:24px 28px; border-radius:18px; background:var(--tint); }
+.note p { margin:0; }
+.document { max-width:730px; margin:64px auto 72px; }
+.document h1 { font-size:clamp(36px,5vw,52px); }
+.document h2 { margin-top:42px; }
+.document h3 { font-size:22px; margin-top:32px; }
+.document p { overflow-wrap:anywhere; }
+.language-nav { display:flex; gap:24px; padding:12px 0; }
+.policy-language { scroll-margin-top:20px; }
+.policy-language + .policy-language { border-top:1px solid var(--line); margin-top:52px; }
+.placeholder { overflow-wrap:anywhere; font-family:inherit; font-size:.95em; background:var(--tint); padding:2px 6px; border-radius:5px; }
+details { border-bottom:1px solid var(--line); padding:20px 0; }
+summary { cursor:pointer; font-size:18px; font-weight:600; line-height:1.45; }
+details p { color:var(--muted); }
+.site-footer { display:flex; justify-content:space-between; align-items:center; gap:20px; border-top:1px solid var(--line); padding-block:24px 32px; font-size:13px; color:var(--muted); }
+.skip { position:absolute; top:8px; left:12px; padding:10px; background:var(--surface); transform:translateY(-200%); }
+.skip:focus { transform:none; }
+@media (prefers-color-scheme:dark) { :root { --bg:#101a19; --surface:#1b2926; --text:#eef4f1; --muted:#adbfba; --line:#354741; --accent:#89ddbd; --tint:#20382f; } }
+@media (max-width:600px) { .wrap { width:calc(100% - 36px); } .site-header { align-items:flex-start; flex-direction:column; gap:10px; padding-block:20px 12px; } nav { gap:24px; } .hero { padding:52px 0 40px; } .benefits { grid-template-columns:1fr; } .benefit { padding:22px 0; } .document { margin-top:40px; } .note { padding:22px; } .site-footer { align-items:flex-start; flex-direction:column; gap:4px; } }
+@media print { .site-header,.site-footer,.skip,.language-nav { display:none; } body { background:white; color:black; } .wrap { width:100%; } .document { max-width:none; margin:0; } }
