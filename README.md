@@ -20,7 +20,7 @@ Nur diese sechs Dateien gehören in das öffentliche Repository. Keine App-Datei
 
 ## Vor Veröffentlichung
 
-- `[SUPPORT_EMAIL]` in `privacy/index.html` (Deutsch und Englisch) und `support/index.html` durch deine erreichbare Support-Adresse ersetzen. Optional als `mailto:`-Link formatieren. Die sichtbaren Hinweise auf die noch fehlende Adresse anschließend entfernen.
+- Support-Kontakt: [warrantywallet.support@protonmail.com](mailto:warrantywallet.support@protonmail.com), auf der Privacy- und Support-Seite verlinkt.
 - Anbietername „Patrick Mickmann“ in Privacy und Footer mit dem tatsächlichen App-Store-Anbieter abgleichen.
 - Sobald vorhanden, den Absatz „App-Store-Link folgt“ und dessen Hinweis in `index.html` durch einen Link zur tatsächlichen App-Store-Produktseite ersetzen. Keine erfundene App-ID verwenden. Für die Veröffentlichung der Support-/Privacy-URLs darf der angekündigte App-Store-Link zunächst stehen bleiben.
 - Die Datenschutzerklärung entspricht der App-Policy Version 1.0 vom 8. September 2026, in Deutsch und Englisch. Interne Veröffentlichungshinweise wurden entfernt; Support-/Privacy-URL-Platzhalter sind relative Links auf diese Website. Bei Änderungen der App-Datenflüsse die öffentliche Policy erneut abgleichen.
@@ -32,7 +32,7 @@ Nur diese sechs Dateien gehören in das öffentliche Repository. Keine App-Datei
 2. Im neuen Repository **Add file → Upload files** öffnen. Ausschließlich die oben aufgeführten Website-Dateien und die Ordner `privacy` und `support` hochladen. `index.html` muss direkt im Repository-Root liegen, nicht in einem weiteren Ordner `warranty-wallet-site`. Die initialisierte README durch diese README ersetzen. Auch die versteckte leere Datei `.nojekyll` hochladen oder mit **Add file → Create new file** anlegen. Änderungen auf `main` committen.
 3. Im neuen Website-Repository **Settings → Pages** öffnen.
 4. Unter **Build and deployment → Source** die Option **Deploy from a branch** wählen. Branch **main**, Ordner **/(root)** auswählen und **Save** klicken.
-5. Auf den erfolgreichen Pages-Deploy warten. Die endgültige URL steht unter **Settings → Pages → Visit site**. Für diesen Repository-Namen lautet das Muster `https://USERNAME.github.io/warranty-wallet-site/`. `USERNAME` durch deinen tatsächlichen GitHub-Benutzernamen bzw. Organisationsnamen ersetzen.
+5. Auf den erfolgreichen Pages-Deploy warten. Die endgültige URL steht unter **Settings → Pages → Visit site**. Für diesen Repository-Namen lautet das Muster `https://patrickmickmann.github.io/warranty-wallet-site/`. Der GitHub-Benutzername dieses Projekts ist `patrickmickmann`.
 6. Alle drei Seiten über die veröffentlichte URL öffnen, Links und Kontaktadresse prüfen und anschließend die beiden folgenden URLs in App Store Connect eintragen.
 
 Offizielle Anleitung: [GitHub – Publishing source konfigurieren](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
@@ -41,11 +41,11 @@ Offizielle Anleitung: [GitHub – Publishing source konfigurieren](https://docs.
 
 | Zweck | URL-Muster |
 | --- | --- |
-| Website / optional Marketing URL | `https://USERNAME.github.io/warranty-wallet-site/` |
-| Privacy Policy URL | `https://USERNAME.github.io/warranty-wallet-site/privacy/` |
-| Support URL | `https://USERNAME.github.io/warranty-wallet-site/support/` |
+| Website / optional Marketing URL | `https://patrickmickmann.github.io/warranty-wallet-site/` |
+| Privacy Policy URL | `https://patrickmickmann.github.io/warranty-wallet-site/privacy/` |
+| Support URL | `https://patrickmickmann.github.io/warranty-wallet-site/support/` |
 
-Diese Muster sind noch keine veröffentlichten URLs. Ein anderer Repository-Name ändert den jeweiligen Pfad. Relative Navigation und CSS funktionieren auch unter einem GitHub-Pages-Projektpfad.
+Diese URLs gehören zur GitHub-Pages-Veröffentlichung dieses Repositorys. Ein anderer Repository-Name ändert den jeweiligen Pfad. Relative Navigation und CSS funktionieren auch unter einem GitHub-Pages-Projektpfad.
 
 ## Lokal ansehen
 
