@@ -15,10 +15,15 @@ warranty-wallet-site/
 │   └── index.html
 ├── support/
 │   └── index.html
+├── en/
+│   ├── index.html
+│   ├── privacy/index.html
+│   ├── support/index.html
+│   └── impressum/index.html
 └── README.md
 ```
 
-Nur diese sieben Dateien gehören in das öffentliche Repository. Keine App-Dateien, App-Git-Historie oder internen Dokumente hinzufügen. Das private App-Repository bleibt separat und privat. Dieses Website-Projekt hat eine eigene Git-Historie, unabhängig vom privaten App-Repository.
+Nur diese elf Dateien gehören in das öffentliche Repository. Keine App-Dateien, App-Git-Historie oder internen Dokumente hinzufügen. Das private App-Repository bleibt separat und privat. Dieses Website-Projekt hat eine eigene Git-Historie, unabhängig vom privaten App-Repository.
 
 ## Vor Veröffentlichung
 
@@ -31,11 +36,11 @@ Nur diese sieben Dateien gehören in das öffentliche Repository. Keine App-Date
 ## GitHub Pages einrichten
 
 1. Bei GitHub ein **neues öffentliches Repository** namens `warranty-wallet-site` erstellen. Nicht das App-Repository importieren, forken oder dessen Sichtbarkeit ändern. Du kannst das neue Repository mit einer README initialisieren; der Standardbranch soll `main` heißen.
-2. Im neuen Repository **Add file → Upload files** öffnen. Ausschließlich die oben aufgeführten Website-Dateien und die Ordner `privacy`, `support` und `impressum` hochladen. `index.html` muss direkt im Repository-Root liegen, nicht in einem weiteren Ordner `warranty-wallet-site`. Die initialisierte README durch diese README ersetzen. Auch die versteckte leere Datei `.nojekyll` hochladen oder mit **Add file → Create new file** anlegen. Änderungen auf `main` committen.
+2. Im neuen Repository **Add file → Upload files** öffnen. Ausschließlich die oben aufgeführten Website-Dateien und die Ordner `privacy`, `support`, `impressum` und `en` hochladen. `index.html` muss direkt im Repository-Root liegen, nicht in einem weiteren Ordner `warranty-wallet-site`. Die initialisierte README durch diese README ersetzen. Auch die versteckte leere Datei `.nojekyll` hochladen oder mit **Add file → Create new file** anlegen. Änderungen auf `main` committen.
 3. Im neuen Website-Repository **Settings → Pages** öffnen.
 4. Unter **Build and deployment → Source** die Option **Deploy from a branch** wählen. Branch **main**, Ordner **/(root)** auswählen und **Save** klicken.
 5. Auf den erfolgreichen Pages-Deploy warten. Die endgültige URL steht unter **Settings → Pages → Visit site**. Für diesen Repository-Namen lautet das Muster `https://patrickmickmann.github.io/warranty-wallet-site/`. Der GitHub-Benutzername dieses Projekts ist `patrickmickmann`.
-6. Alle vier Seiten über die veröffentlichte URL öffnen, Links und Kontaktadresse prüfen und anschließend die beiden folgenden URLs in App Store Connect eintragen.
+6. Alle acht Seiten über die veröffentlichte URL öffnen, Links und Kontaktadresse prüfen und anschließend die beiden folgenden URLs in App Store Connect eintragen.
 
 Offizielle Anleitung: [GitHub – Publishing source konfigurieren](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
@@ -59,3 +64,9 @@ python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
 Dann `http://127.0.0.1:8080/` öffnen. Mit `Ctrl+C` beenden. Kein Installations- oder Build-Schritt erforderlich.
+
+## Sprachen
+
+Deutsch bleibt unter den bisherigen URLs erreichbar. Englisch liegt unter `/en/`, mit `/en/privacy/`, `/en/support/` und `/en/impressum/`. Der DE/EN-Wechsel im Header führt jeweils zur gleichen Seite in der anderen Sprache. Navigation bleibt innerhalb der gewählten Sprache. Kein JavaScript, keine automatische Umleitung und keine Speicherung der Sprachwahl.
+
+Die vorhandenen deutschen und englischen Policy-Texte sind auf die jeweiligen Sprachseiten verteilt; der fachliche Inhalt bleibt unverändert. Änderungen an Produkt- und Supporttexten in beiden Sprachfassungen pflegen.
