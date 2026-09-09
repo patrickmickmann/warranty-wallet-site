@@ -34,6 +34,7 @@ h2 { font-size:27px; margin:14px 0; }
 .document h2 { margin-top:42px; }
 .document h3 { font-size:22px; margin-top:32px; }
 .document p { overflow-wrap:anywhere; }
+.document address { font-style:normal; overflow-wrap:anywhere; }
 .language-nav { display:flex; gap:24px; padding:12px 0; }
 .policy-language { scroll-margin-top:20px; }
 .policy-language + .policy-language { border-top:1px solid var(--line); margin-top:52px; }
