@@ -22,7 +22,7 @@ Nur diese sieben Dateien gehören in das öffentliche Repository. Keine App-Date
 
 ## Vor Veröffentlichung
 
-- Support-Kontakt: [warrantywallet.support@protonmail.com](mailto:warrantywallet.support@protonmail.com), auf der Privacy- und Support-Seite verlinkt.
+- Support-Kontakt: [warrantywallet.support@protonmail.com](mailto:warrantywallet.support@protonmail.com). Telefon: [+49 15678 339764](tel:+4915678339764), im Impressum und auf der Supportseite verlinkt.
 - Anbietername „Patrick Mickmann“ in Privacy und Footer mit dem tatsächlichen App-Store-Anbieter abgleichen.
 - Sobald vorhanden, den Absatz „App-Store-Link folgt“ und dessen Hinweis in `index.html` durch einen Link zur tatsächlichen App-Store-Produktseite ersetzen. Keine erfundene App-ID verwenden. Für die Veröffentlichung der Support-/Privacy-URLs darf der angekündigte App-Store-Link zunächst stehen bleiben.
 - Die Datenschutzerklärung entspricht der App-Policy Version 1.0 vom 8. September 2026, in Deutsch und Englisch. Interne Veröffentlichungshinweise wurden entfernt; Support-/Privacy-URL-Platzhalter sind relative Links auf diese Website. Bei Änderungen der App-Datenflüsse die öffentliche Policy erneut abgleichen.
